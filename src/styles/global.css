@@ -1,0 +1,229 @@
+/* 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9ff;
+  color: #17172b;
+}
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Hind Siliguri", "Inter", sans-serif;
+  color: #20213b;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Hind Siliguri", "Inter", sans-serif;
+  color: #20213b;
+}
+
+.brand-dot {
+  color: #6558e8;
+}
+
+.btn-primary {
+  background: #6558e8;
+  border-color: #6558e8;
+}
+
+.btn-primary:hover {
+  background: #5144d1;
+  border-color: #5144d1;
+}
+
+.hero-section {
+  padding: 100px 0 85px;
+  background:
+    radial-gradient(ellipse at 50% 0%, #e7e6ff 0%, transparent 65%),
+    linear-gradient(180deg, #f8f8ff, #ffffff);
+}
+
+.launch-badge {
+  display: inline-block;
+  padding: 9px 18px;
+  color: #6558e8;
+  background: #efedff;
+  border: 1px solid #dedaff;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.hero-title {
+  margin: 28px auto 20px;
+  font-size: clamp(36px, 6vw, 66px);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.hero-title span {
+  color: #6558e8;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: #686981;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 22px;
+  margin-top: 28px;
+  color: #53546a;
+  font-size: 14px;
+}
+
+.join-section {
+  padding: 70px 0;
+  background: #f7f7ff;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 36px;
+  background: #ffffff;
+  border: 1px solid #ecebfa;
+  border-radius: 24px;
+  box-shadow: 0 16px 55px rgba(54, 47, 126, 0.07);
+}
+
+.form-card h2 {
+  font-size: 30px;
+}
+
+.form-card .form-control,
+.form-card .form-select {
+  border-color: #dedfec;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.form-card .form-control:focus,
+.form-card .form-select:focus {
+  border-color: #6558e8;
+  box-shadow: 0 0 0 0.2rem rgba(101, 88, 232, 0.13);
+}
+
+.success-result {
+  padding: 18px;
+  background: #effbf3;
+  border: 1px solid #c8efd4;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+
+.success-result h3 {
+  font-size: 20px;
+  color: #19733a;
+}
+
+.referral-section {
+  padding: 70px 0;
+}
+
+.referral-card {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0efff, #fafaff);
+  border: 1px solid #e5e2ff;
+  border-radius: 24px;
+}
+
+.referral-icon {
+  margin-bottom: 12px;
+  font-size: 44px;
+}
+
+.referral-card h2 {
+  font-weight: 700;
+}
+
+.referral-card p {
+  max-width: 550px;
+  margin: 15px auto 24px;
+  color: #686981;
+  line-height: 1.8;
+}
+
+.referral-card input {
+  max-width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.footer-section {
+  padding: 35px 0;
+  background: #1f2039;
+  color: #ffffff;
+}
+
+.footer-brand {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-section p {
+  margin-bottom: 12px;
+  color: #d0d0e0;
+}
+
+.footer-section small {
+  color: #b5b5cb;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 70px 0 55px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-points {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-card,
+  .referral-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .form-card h2 {
+    font-size: 25px;
+  }
+}

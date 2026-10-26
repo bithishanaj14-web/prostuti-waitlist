@@ -1,0 +1,63 @@
+
+.home-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, #e3e7ff, transparent 60%),
+    #f8f9ff;
+}
+
+.brand-name {
+  color: #17172b;
+  font-size: 27px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand-name span,
+.hero-section h1 span {
+  color: #6558e8;
+}
+
+.hero-section {
+  max-width: 760px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.launch-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #d9d5ff;
+  border-radius: 30px;
+  background: #fff;
+  color: #6558e8;
+  font-size: 14px;
+}
+
+.hero-section h1 {
+  margin-top: 25px;
+  font-size: clamp(42px, 7vw, 72px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  max-width: 540px;
+  margin: 20px auto;
+  color: #66677a;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.waitlist-input {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.join-button {
+  padding: 13px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+}
