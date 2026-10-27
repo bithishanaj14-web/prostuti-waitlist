@@ -1,3 +1,4 @@
+```yaml
 name: Deploy Vite App
 
 on:
@@ -35,11 +36,9 @@ jobs:
       - name: Build
         run: npm run build
         env:
-                - name: Build
-        run: npm run build
-        env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -59,3 +58,4 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+```
