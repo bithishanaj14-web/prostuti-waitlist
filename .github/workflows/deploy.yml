@@ -33,7 +33,12 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+  run: npm run build
+  env:
+    VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL=https://kdiazddlwnzjcniodath.supabase.co
+    VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_bfinTbY6-fhy6yQ5PK1mWw_NZnjLzDN
+
+        
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
