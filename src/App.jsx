@@ -11,7 +11,7 @@ import AdminDashboard from "./pages/AdminDashboard.jsx";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/prostuti-waitlist">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin-login" element={<AdminLogin />} />
@@ -21,4 +21,5 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
 
