@@ -1,5 +1,5 @@
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
   Navigate,
@@ -11,14 +11,14 @@ import AdminDashboard from "./pages/AdminDashboard.jsx";
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/prostuti-waitlist">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
